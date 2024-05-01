@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <style>
+        .ele{
+display: flex;
+align-items: center;
+        }
+        form{
+            width: fit-content;
+        }
+        p{
+            width: 100px;
+        }
+        form input[type="radio"]   ,input[type="checkbox"]{
+            display: flex;
+            flex-direction: column;
+         }
+           .radbut{
+            display: flex;
+            flex-direction: column;
+           } 
+           .radbut div{
+            display: flex;
+           }
+        </style>
+    </head>
+    <body>
+        <form>
+            <h2>Novell Services Login</h2>
+            <div class="ele">
+                <p><label>Username</label></p>
+                <input type="text">
+            </div>
+            <div class="ele">
+                <p><label>Password</label></p>
+                <input type="password">
+            </div>
+            <div class="ele">
+                <p><label>City of Employment</label></p>
+                <input type="text">
+            </div>
+            <div class="ele">
+                <p><label>Web Server</label></p>
+                <select>
+                    <option>--Choose a server--</option>
+                    <option>server-1</option>
+                    <option>server-2</option>
+                    <option>server-3</option>
+                </select>
+            </div>
+            <div class="ele">
+                <p><label>Please specify your role</label></p>
+                    <div class="radbut">
+                        <div>
+                            <input type="radio" name="rad"><label>Admin</label>
+                        </div>
+                      <div>
+                        <input type="radio" name="rad">Engineer
+                      </div>
+                       <div><input type="radio" name="rad">Manager</div>
+                       <div> <input type="radio" name="rad">Guest</div>  
+                    </div>
+            </div>
+            <div class="ele">
+                <p><label>Single Sign-on to the following</label></p>
+                <div class="radbut">
+                    <div> <input type="checkbox">Mail </div>
+                    <div><input type="checkbox">Payroll</div>
+                    <div>  <input type="checkbox">self-service</div>
+            </div>
+            </div>
+           
+           
+           
+          
+           
+          
+            <input type="submit" value="Login">
+            <input type="reset">
+
+        </form>
+        <a href="form-2.html">Form-2</a>
+    </body>
+</html>
